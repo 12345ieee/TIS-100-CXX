@@ -1,6 +1,6 @@
 [package]
-name = "baby_fuzzer"
-version = "0.14.1"
+name = "pareto_fuzzer"
+version = "0.0.1"
 authors = [
   "Andrea Fioraldi <andreafioraldi@gmail.com>",
   "Dominik Maier <domenukk@gmail.com>",
@@ -24,6 +24,7 @@ debug = true
 
 [dependencies]
 env_logger = "0.11.7"
-libafl = { version = "*", features = ["tui_monitor"] }
-libafl_bolts = { version = "*" }
+libafl = { version = "0.15", features = ["tui_monitor"] }
+libafl_bolts = { version = "0.15" }
 log = { version = "0.4.22", features = ["release_max_level_info"] }
+serde = { version = "1.0", features = ["derive"] }
